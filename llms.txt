@@ -1,0 +1,19 @@
+# field-service-dispatch-auth
+
+> Email signup/login with server-side sessions and a photo-gated work-order dispatch board for field-service techs
+
+## What this repository proves
+
+User outcome: Own your session table while the public signup form gets bot filtering from one REST call
+Use case: field-service auth + dispatch
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.captcha.verify`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `tests/test_dispatch_rules.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

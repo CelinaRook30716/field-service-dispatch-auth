@@ -1,0 +1,1 @@
+"""Dispatch board package."""
